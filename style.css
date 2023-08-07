@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  margin: 24px 24px 24px 0;
+  height: 100%;
+}
+
+#main-doc{
+  width: 70%;
+  float: right;
+  line-height: 1.6rem;
+  padding-left: 24px;
+}
+
+#main-doc h2{
+  font-size: 30px;
+}
+
+#main-doc p, #main-doc li{
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+code{
+  display: block;
+  background-color: rgba(128, 128, 128, 0.1);
+  font-size: 16px;
+  padding: 24px;
+}
+
+#navbar{
+  position: fixed;
+  width: 26%;
+  float: left;
+  font-size: 20px;
+  height: 100%;
+  border-right: 3px solid grey;
+}
+
+.div-nav-link{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  padding: 24px;
+}
+
+#navbar h4{
+  margin: 0;
+
+}
+
+
+#navbar a{
+  text-decoration: none;
+  color: rgb(82, 80, 80);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 870px) {
+  body{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  #main-doc{
+    position: relative;
+    margin-top: 300px;
+    width: 90%;
+    padding: 0 24px;
+    text-justify: justify;
+  }
+  #navbar{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    max-height: 275px;
+    margin: 0;
+    margin-bottom: 24px;
+    border-right: 0;
+    overflow-y: auto;
+  }
+}
